@@ -32,7 +32,7 @@ public class VideoRatingServiceTest {
                 emitter.onNext(1);
                 emitter.onNext(2);
                 emitter.onNext(3);
-                //emitter.onComplete();
+                emitter.onComplete();
                 emitter.onError(new Throwable("Error occurred!"));
                 emitter.onNext(4);
                 emitter.onNext(5);
